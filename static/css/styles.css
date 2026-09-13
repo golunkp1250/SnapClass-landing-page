@@ -1,0 +1,1178 @@
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis:YEAR@1979&family=Outfit:wght@100..900&display=swap');
+
+:root{
+    --bg-main: #f0f4ff;
+    --primary: #5865f2;
+    --text-muted: #64748b;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--bg-main);
+    font-family: 'Outfit', sans-serif;
+    line-height: 1.6;
+    /* overflow: hidden; */
+}
+h1,
+h2,
+h3,
+h4{
+    font-family: 'Climate Crisis', sans-serif;
+    line-height: 1.1;
+    word-break: break-word;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 80px;
+    background-color: black;
+    position: sticky;
+    top: 0px;
+    z-index: 999;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+}
+.logo img{
+    height: 38px;
+    width: auto;
+
+}
+.logo-text{
+    font-family: 'Climate Crisis', sans-serif;
+    font-size: 1.6rem;
+    color: white;
+    line-height: 0.8;
+    font-weight: 500;
+}
+.nav-links{
+    display: flex;
+    gap: 40px;
+}
+.nav-links a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.nav-links a:hover{
+    color: var(--primary)
+}
+
+.btn-pills{
+    background-color: white;
+    color: black;
+    padding: 13px 32px;
+    border-radius: 100px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+}
+.btn-pills:hover{
+    background-color: #f0f0f0;
+}
+
+
+.hero{
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 100px 40px;
+    background-color: #f0f0ff;
+}
+
+.badge{
+    display: inline-flex;
+    align-items: center;
+    background-color: white;
+    border: 1px solid rgb(225, 198, 225);
+    border-radius: 100px;
+    padding: 10px 20px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color:var(--primary);
+    margin-bottom: 32px;
+}
+.hero h1{
+    font-size: 4.5rem;
+    color: black;
+    max-width: 1000px;
+    margin-bottom: 24px;
+    line-height: 1;
+
+}
+
+.hero h1 span{
+    color: var(--primary);
+}
+.hero p{
+    font-size: 1.25rem;
+    color: var(--text-muted);
+    max-width: 650px;
+    margin-bottom: 56px;
+    font-weight: 400;
+}
+.hero-action{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 60px;
+}
+
+.btn-cta,
+.link-action{
+    background-color: black;
+    color: white;
+    border-radius: 100px;
+    text-decoration: none;
+    padding:  10px 20px ;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    gap: 12px;
+}
+
+.btn-cta:hover{
+    background-color: #2f0303;
+}
+.link-action{
+    color: white;
+    width: 200px;
+    /* color: var(--text-muted); */
+    text-decoration: none;
+    text-align: center;
+    font-weight: 600;
+}
+
+.link-action:hover{
+    background-color: #2f0303;
+}
+.floating-card{
+    position: absolute;
+    width: 320px;
+    height: 50%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 40px;
+    border: 1px solid #e5e7eb;
+    overflow: hidden;
+}
+.floating-card img{
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 24px;
+    background-color: gray;
+
+}
+
+.card-left{
+    padding-top: 25px;
+    margin-left: 30px;
+    left: 20px;
+    top: 50%;
+}
+.card-right{
+    padding-top: 25px;
+    margin-right: 30px;
+    right: 20px;
+    top: 50%;
+}
+.demo-image{
+    padding-bottom: 20px;
+    padding-right: 20px;
+    width: 320px;
+    height: 340px;
+}
+
+.demo-image1{
+    width: 320px;
+    height: 340px;
+}
+
+.features{
+    padding: 120px 80px;
+    background-color: white;
+    text-align: center;
+}
+.features h2{
+    font-size: 3.5rem;
+    margin-bottom: 60px;
+}
+.feature-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.feature-card{
+    padding: 60px 40px ;
+    border-radius: 40px;
+    background-color: white;
+    border: 1px solid #e5e7eb;
+}
+.f-icon-box{
+    width: 80px;
+    height: 80px;
+    background-color: #f8faff;
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 30px;
+    font-size: 2.5rem;
+}
+
+.feature-card h3{
+    font-size: 1.6rem;
+    margin-bottom: 16px;
+    font-weight: 1rem;
+
+}
+
+.feature-card p{
+    color: var(--text-muted);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+/* 
+Teacher Journey */
+
+
+/* Advanced Tech Stack */
+.tech-stack{
+    width: 1400px;
+    margin-left: 70px;
+    height: 500px;
+    background-color: #7c4dff;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 80px;
+    margin-bottom: 80px;
+}
+.tech-stack h2{
+    font-size: 3.3rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.tech-stack .section-tag{
+    color: wheat;
+    font-weight: 700;
+}
+
+.tech-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 60px;
+    max-width: 1200px;
+    margin: 40px auto 0;
+}
+
+
+.purple-section{
+    width: 1400px;
+    margin-left: 70px;
+    background-color: var(--primary);
+    color: white;
+    padding: 60px 40px;
+    text-align: center;
+    border-radius: 80px;
+    margin-bottom: 40px;
+}
+.purple-section h2{
+    font-size: 2.5rem;
+    margin-bottom: 24px;
+    color: white;
+}
+
+.tech-card{
+    background-color: rgba(255, 255, 255,0.15);
+    padding: 30px 20px;
+    border-radius: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.t-icon{
+    width: 60px;
+    height: 60px;
+    border-radius: 16px;
+    background-color: white;
+    min-width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+}
+
+.tech-card h4{
+    font-size: 1.15rem;
+    margin-bottom: 6px;
+    color: wheat;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 800;
+}
+
+.tech-tag{
+    display: inline-block;
+    background-color: #4bb786;
+    color: white;
+    border-radius: 8px;
+    font-size: 0.65rem;
+    margin-top: 10px;
+    padding: 2px 10px;
+    font-weight: 800;
+}
+
+.tech-card p{
+    font-size: 0.85rem;
+    color: white;
+    line-height: 1.4;
+
+}
+
+.purple-section p{
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+.btn-white{
+    background-color: white;
+    color: var(--primary);
+    padding: 15px 30px;
+    border-radius: 100px;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 1.1rem;
+    display: inline-block;
+}
+
+
+
+
+.main-footer{
+    padding: 100px 80px 40px;
+    background-color: black;
+    color: wheat;
+    border-top: 1px solid #333333;
+}
+
+.main-footer .footer-grid{
+    display: grid;
+    gap: 80px;
+    margin: 0 auto 80px;
+    max-width: 1200px;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+}
+
+.footer-brand p{
+    color: #cccccc;
+    font-size: 1rem;
+    max-width: 320px;
+    line-height: 1.6;
+}
+
+.footer-brand .logo-text{
+    color: white;
+}
+
+.footer-links h4{
+    font-size: 1.3rem;
+    color: white;
+    margin-bottom: 32px;
+    font-family: 800;
+}
+
+.footer-links ul{
+    list-style: none;
+}
+
+.footer-links li{
+    margin-bottom: 16px;
+}
+
+.footer-links{
+    text-decoration: none;
+    color: #cccccc;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+.footer-bottom{
+    padding-top: 40px;
+    border-top: 1px solid #333333;
+    text-align: center;
+}
+
+.footer-bottom p{
+    columns: #999999;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.teacher-flow{
+    padding: 120px 80px;
+
+}
+.flow-container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.flow-step{
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    margin-bottom: 120px;
+}
+.flow-content{
+    flex: 1
+}
+.step-badge{
+    color: var(--primary);
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 16px;
+    font-size: 0.9rem;
+    display: block;
+    text-transform: uppercase;
+}
+.flow-content h3{
+    font-size: 3.2rem;
+    margin-bottom: 24px;
+}
+.flow-content p{
+    font-size: 1.15rem;
+    color: var(--text-muted);
+    margin-bottom: 30px;
+}
+
+.flow-image{
+    /* flex: 1.4; */
+    border-radius: 40px;
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    overflow: hidden;
+}
+
+.flow-image img{
+    width: 400px;
+    height: 350px;
+    display: block;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+/* TABLET / SMALL LAPTOP  */
+@media (max-width: 1200px) {
+
+    .navbar {
+        padding: 12px 30px;
+    }
+
+    .nav-links {
+        gap: 25px;
+    }
+
+    .hero {
+        padding: 80px 30px;
+    }
+
+    .hero h1 {
+        font-size: 3.8rem;
+        max-width: 800px;
+    }
+
+    .floating-card {
+        width: 260px;
+    }
+
+    .card-left {
+        left: 10px;
+        margin-left: 0;
+    }
+
+    .card-right {
+        right: 10px;
+        margin-right: 0;
+    }
+
+    .demo-image,
+    .demo-image1 {
+        width: 240px;
+        height: auto;
+    }
+
+    .tech-stack,
+    .purple-section {
+        width: calc(100% - 60px);
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .tech-grid {
+        gap: 25px;
+    }
+
+    .main-footer {
+        padding: 80px 40px 40px;
+    }
+}
+
+
+/* TABLET */
+@media (max-width: 900px) {
+
+    /* NAVBAR */
+    .navbar {
+        padding: 12px 25px;
+    }
+
+    .logo-text {
+        font-size: 1.3rem;
+    }
+
+    .logo img {
+        height: 34px;
+    }
+
+    .nav-links {
+        gap: 18px;
+    }
+
+    .nav-links a {
+        font-size: 0.85rem;
+    }
+
+    .btn-pills {
+        padding: 11px 20px;
+        font-size: 0.85rem;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 90px 25px 80px;
+        position: relative;
+    }
+
+    .badge {
+        margin-bottom: 25px;
+    }
+
+    .hero h1 {
+        font-size: 3.2rem;
+        max-width: 700px;
+    }
+
+    .hero p {
+        font-size: 1.05rem;
+        max-width: 600px;
+        margin-bottom: 40px;
+    }
+
+    .hero-action {
+        gap: 15px;
+        margin-bottom: 40px;
+    }
+
+
+    .floating-card {
+        position: relative;
+        width: 280px;
+        height: auto;
+        top: auto;
+        left: auto;
+        right: auto;
+        margin: 25px auto;
+        padding: 10px;
+    }
+
+    .card-left,
+    .card-right {
+        position: relative;
+        top: auto;
+        left: auto;
+        right: auto;
+        margin: 25px auto;
+    }
+
+    .demo-image,
+    .demo-image1 {
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+
+
+    .features {
+        padding: 80px 30px;
+    }
+
+    .features h2 {
+        font-size: 2.8rem;
+    }
+
+    .feature-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    .feature-card {
+        padding: 40px 25px;
+    }
+
+
+    .tech-stack {
+        width: calc(100% - 40px);
+        margin: 20px;
+        height: auto;
+        padding: 50px 25px;
+        border-radius: 50px;
+    }
+
+    .tech-stack h2 {
+        font-size: 2.7rem;
+    }
+
+    .tech-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+
+    .purple-section {
+        width: calc(100% - 40px);
+        margin: 20px;
+        padding: 50px 25px;
+        border-radius: 50px;
+    }
+
+
+    .teacher-flow {
+        padding: 80px 30px;
+    }
+
+    .flow-container {
+        max-width: 100%;
+    }
+
+    .flow-step {
+        flex-direction: column;
+        gap: 40px;
+        margin-bottom: 80px;
+    }
+
+    .flow-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .flow-content h3 {
+        font-size: 2.7rem;
+    }
+
+    .flow-image {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .flow-image img {
+        width: 100%;
+        height: auto;
+    }
+
+
+    .main-footer {
+        padding: 70px 30px 30px;
+    }
+
+    .main-footer .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+        margin-bottom: 50px;
+    }
+}
+
+
+/* MOBILE */
+@media (max-width: 600px) {
+
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    * {
+        max-width: 100%;
+    }
+
+
+
+    .navbar {
+        width: 100%;
+        padding: 12px 16px;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .logo {
+        gap: 8px;
+    }
+
+    .logo img {
+        height: 32px;
+    }
+
+    .logo-text {
+        font-size: 1.15rem;
+    }
+
+    .nav-links {
+        order: 3;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 18px;
+        padding: 8px 0 4px;
+        flex-wrap: wrap;
+    }
+
+    .nav-links a {
+        font-size: 0.78rem;
+    }
+
+    .btn-pills {
+        padding: 9px 14px;
+        font-size: 0.75rem;
+    }
+
+
+
+    .hero {
+        width: 100%;
+        min-height: auto;
+        padding: 60px 16px 60px;
+        overflow: hidden;
+    }
+
+    .badge {
+        padding: 8px 15px;
+        font-size: 0.75rem;
+        margin-bottom: 25px;
+    }
+
+    .hero h1 {
+        width: 100%;
+        max-width: 100%;
+        font-size: 2.5rem;
+        line-height: 1.05;
+        margin-bottom: 20px;
+        word-break: normal;
+        overflow-wrap: break-word;
+    }
+
+    .hero p {
+        width: 100%;
+        max-width: 100%;
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin-bottom: 35px;
+        padding: 0 5px;
+    }
+
+    .hero-action {
+        width: 100%;
+        flex-direction: column;
+        gap: 14px;
+        margin-bottom: 30px;
+    }
+
+    .btn-cta,
+    .link-action {
+        width: auto;
+        min-width: 210px;
+        justify-content: center;
+        padding: 12px 20px;
+        font-size: 0.95rem;
+    }
+
+
+    .floating-card {
+        position: relative !important;
+        display: block !important;
+
+        width: calc(100% - 30px) !important;
+        max-width: 320px !important;
+
+        height: auto !important;
+        min-height: 0 !important;
+
+        top: auto !important;
+        bottom: auto !important;
+        left: auto !important;
+        right: auto !important;
+
+        margin: 30px auto !important;
+
+        padding: 10px !important;
+
+        border-radius: 30px;
+        overflow: hidden;
+
+        background-color: white;
+    }
+
+    .card-left,
+    .card-right {
+        position: relative !important;
+
+        top: auto !important;
+        bottom: auto !important;
+        left: auto !important;
+        right: auto !important;
+
+        margin: 30px auto !important;
+
+        padding-top: 10px !important;
+    }
+
+    .floating-card img {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+
+        width: 100% !important;
+        height: auto !important;
+
+        max-width: 100% !important;
+
+        aspect-ratio: 1 / 1 !important;
+        object-fit: cover;
+
+        border-radius: 20px;
+    }
+
+    .demo-image,
+    .demo-image1 {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+
+        padding: 0 !important;
+        margin: 0 auto !important;
+    }
+
+
+
+    .features {
+        width: 100%;
+        padding: 70px 16px;
+    }
+
+    .features h2 {
+        font-size: 2.2rem;
+        margin-bottom: 40px;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .feature-card {
+        padding: 35px 22px;
+        border-radius: 30px;
+    }
+
+    .f-icon-box {
+        width: 65px;
+        height: 65px;
+        font-size: 2rem;
+        border-radius: 18px;
+        margin-bottom: 20px;
+    }
+
+    .feature-card h3 {
+        font-size: 1.35rem;
+    }
+
+    .feature-card p {
+        font-size: 0.95rem;
+    }
+
+
+
+    .tech-stack {
+        width: calc(100% - 24px) !important;
+        margin: 20px 12px !important;
+
+        height: auto !important;
+
+        padding: 45px 15px !important;
+
+        border-radius: 35px !important;
+    }
+
+    .tech-stack h2 {
+        font-size: 2rem;
+        line-height: 1.1;
+    }
+
+    .tech-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        margin-top: 30px;
+    }
+
+    .tech-card {
+        padding: 30px 18px;
+        border-radius: 25px;
+    }
+
+    .t-icon {
+        width: 55px;
+        height: 55px;
+        min-width: 55px;
+        font-size: 1.5rem;
+    }
+
+    .tech-card h4 {
+        font-size: 1.1rem;
+    }
+
+    .tech-card p {
+        font-size: 0.85rem;
+    }
+
+
+
+    .purple-section {
+        width: calc(100% - 24px) !important;
+        margin: 20px 12px !important;
+
+        padding: 45px 18px !important;
+
+        border-radius: 35px !important;
+    }
+
+    .purple-section h2 {
+        font-size: 2rem;
+    }
+
+    .purple-section p {
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: 30px;
+    }
+
+    .btn-white {
+        font-size: 0.95rem;
+        padding: 12px 22px;
+    }
+
+
+    .teacher-flow {
+        width: 100%;
+        padding: 70px 16px;
+    }
+
+    .flow-container {
+        width: 100%;
+    }
+
+    .flow-step {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        gap: 30px;
+        margin-bottom: 70px;
+    }
+
+    .flow-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .step-badge {
+        font-size: 0.75rem;
+    }
+
+    .flow-content h3 {
+        font-size: 2rem;
+        line-height: 1.1;
+    }
+
+    .flow-content p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .flow-image {
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto;
+        border-radius: 25px;
+    }
+
+    .flow-image img {
+        display: block;
+
+        width: 100% !important;
+        max-width: 100% !important;
+
+        height: auto !important;
+    }
+
+
+
+    .main-footer {
+        width: 100%;
+        padding: 60px 24px 30px;
+        overflow: hidden;
+    }
+
+    .main-footer .footer-grid {
+        width: 100%;
+
+        display: grid;
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+
+        margin-bottom: 50px;
+    }
+
+    .footer-brand p {
+        max-width: 100%;
+        font-size: 0.9rem;
+    }
+
+    .footer-links {
+        width: 100%;
+    }
+
+    .footer-links h4 {
+        font-size: 1.15rem;
+        margin-bottom: 20px;
+    }
+
+    .footer-links li {
+        margin-bottom: 12px;
+    }
+
+    .footer-links a {
+        font-size: 0.9rem;
+    }
+
+    .footer-bottom {
+        padding-top: 25px;
+    }
+
+    .footer-bottom p {
+        font-size: 0.8rem;
+    }
+}
+
+
+/* VERY SMALL MOBILE */
+
+@media (max-width: 400px) {
+
+    .navbar {
+        padding: 10px 12px;
+    }
+
+    .logo-text {
+        font-size: 1rem;
+    }
+
+    .logo img {
+        height: 28px;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .nav-links a {
+        font-size: 0.7rem;
+    }
+
+    .btn-pills {
+        padding: 8px 10px;
+        font-size: 0.7rem;
+    }
+
+    .hero {
+        padding: 50px 12px;
+    }
+
+    .hero h1 {
+        font-size: 2.05rem;
+    }
+
+    .hero p {
+        font-size: 0.88rem;
+    }
+
+    .btn-cta,
+    .link-action {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .floating-card {
+        width: calc(100% - 10px) !important;
+        max-width: 300px !important;
+    }
+
+    .features h2 {
+        font-size: 1.9rem;
+    }
+
+    .tech-stack h2,
+    .purple-section h2 {
+        font-size: 1.7rem;
+    }
+
+    .flow-content h3 {
+        font-size: 1.7rem;
+    }
+
+    .main-footer {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+}

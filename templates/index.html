@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Snap Class Ai Powered Attendance System</title>
+        <link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}">
+        <link rel="icon" type="image/png" href="{{url_for('static', filename='img/logo.png')}}">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+        
+    </head>
+
+
+    <body>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="{{url_for('static', filename='img/logo.png')}}" style="height: 32px; alt: SnapClass logo;">
+                <div class="logo-text">SnapClass</div>
+            </div>
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#features">Fratures</a>
+                <a href="#journey">Journey</a>
+                <a href="#tech">Tech Stack</a>
+            </div>
+            <div class="nav-cta">
+                <a href="https://snapclass-main-golu.streamlit.app/" class="btn-pills">
+                    Start AI Attenance 
+                    <svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="M10.5253 5.49475L10.5206 7.49475L15.0782 7.50541L5.47473 17.0896L6.88752 18.5052L16.5173 8.89479L16.5065 13.5088L18.5065 13.5134L18.5253 5.51345L10.5253 5.49475Z" fill="currentColor"></path></svg>
+                </a>
+            </div>
+        </nav>
+        <header class="hero">
+            <div class="badge">
+                Welcome to SnapClass
+            </div>
+            <h1>AI Powered <br>Attendance <span>System</span></h1>
+            <p>Revolutionizing the classroom with next-gen computer vision and voice biometrics. Trusted by educations for speed, accuracy, and security.</p>
+
+            <div class="hero-action">
+                <a href="https://snapclass-main-golu.streamlit.app/" class="btn-cta">
+                    Start AI Attenance 
+                    <svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="M10.5253 5.49475L10.5206 7.49475L15.0782 7.50541L5.47473 17.0896L6.88752 18.5052L16.5173 8.89479L16.5065 13.5088L18.5065 13.5134L18.5253 5.51345L10.5253 5.49475Z" fill="currentColor"></path></svg>
+                </a>
+                <a href="journey" class="link-action">Explore Journey 🗺️</a>
+            </div>
+            <div class="floating-card card-left">
+                <div class="card-img">
+                    <img src="{{url_for('static', filename='img/demo/attendanceresult.png')}}" alt="landing img 1" class="demo-image">
+                </div>
+            </div>
+
+            <div class="floating-card card-right">
+                <div class="card-img">
+                    <img src="{{url_for('static', filename='img/demo/f1.png')}}" alt="landing img 2" class="demo-image1">
+                </div>
+            </div>
+        </header>
+
+        <section id="features" class="features">
+            <h2>Innovative Features</h2>
+
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="f-icon-box">📸</div>
+                    <h3>AI Face Analysis</h3>
+                    <p>
+                        Advanced neural networks recognize every student's face from a single class photo,making attendance instant and accurate.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="f-icon-box">🎙️</div>
+                    <h3>Sequential Voice ID</h3>
+                    <p>
+                        Students say "Present" one-by-one, and our audio-AI matches their voice biometrics against stored embeddings in real-time.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="f-icon-box">📱</div>
+                    <h3>QR-Driven Roster</h3>
+                    <p>
+                        Course codes generate unique QR codes for instnat student enrollment. No more manual entry or data management headaches.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="journey" class="teacher-flow">
+            <div class="flow-container">
+                <div class="section-tag" style="text-align: center; margin-bottom: 40px; display: block;">-- Work Flow--</div>
+                <h2 style="text-align: center; font-size: 3.5rem; margin-bottom: 80px; ">The Teacher's Journey</h2>
+                <div class="flow-step">
+                    <div class="flow-content">
+                        <div class="step-bedge">STEP 01</div>
+                        <h3>Secure Login</h3>
+                        <p>
+                            Start Your session with our high-security authentication portal, Your data is encrypted and synced across all your devices.
+                        </p>
+                    </div>
+                    <div class="flow-image">
+                        <img src="{{url_for('static', filename='img/demo/teacherlogin.png')}}" alt="flow image ">
+                    </div>
+                </div>
+
+                <div class="flow-step">
+                    <div class="flow-content">
+                        <div class="step-bedge">STEP 02</div>
+                        <h3>Interactive Dashboard</h3>
+                        <p>
+                            Manage all your Subjects, attendance logs, and student rosters from a single, beautiful unified stream.
+                        </p>
+                    </div>
+                    <div class="flow-image">
+                        <img src="{{url_for('static', filename='img/demo/maindesboard.png')}}" alt="flow image ">
+                    </div>
+                </div>
+
+                <div class="flow-step">
+                    <div class="flow-content">
+                        <div class="step-bedge">STEP 03</div>
+                        <h3>Course Management</h3>
+                        <p>
+                            Creating a new subject is a breeze, just name it, and SnapClass generates everything you need to start tracking.
+                        </p>
+                    </div>
+                    <div class="flow-image">
+                        <img src="{{url_for('static', filename='img/demo/managesubject.png')}}" alt="flow image ">
+                    </div>
+                </div>
+
+                <div class="flow-step">
+                    <div class="flow-content">
+                        <div class="step-bedge">STEP 04</div>
+                        <h3>FaceID Attendance</h3>
+                        <p>
+                            Start Your session with our high-security authentication portal, Your data is encrypted and synced across all your devices.
+                        </p>
+                    </div>
+                    <div class="flow-image">
+                        <img src="{{url_for('static', filename='img/demo/loginusingfaceid.png')}}" alt="flow image ">
+                    </div>
+                </div>
+
+                <div class="flow-step">
+                    <div class="flow-content">
+                        <div class="step-bedge">STEP 05</div>
+                        <h3>Voice ID Attendance</h3>
+                        <p>
+                            Switch to voice mode for a futuristic roll-call, Students Speak sequentially, and our AI matches their unique voice signature.
+                        </p>
+                    </div>
+                    <div class="flow-image">
+                        <img src="{{url_for('static', filename='img/demo/voice_attendance.png')}}" alt="flow image ">
+                    </div>
+                </div>
+
+                <div class="flow-step">
+                    <div class="flow-content">
+                        <div class="step-bedge">STEP 06</div>
+                        <h3>Actionable Records</h3>
+                        <p>
+                            Review and manage historical logs. View confidence scores, download CSV reports, and trace long-term.
+                        </p>
+                    </div>
+                    <div class="flow-image">
+                        <img src="{{url_for('static', filename='img/demo/attendancerecord.png')}}" alt="flow image ">
+                    </div>
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <section id="tech" class="tech-stack">
+            <div class="section-tag">-- Our Backend--</div>
+            <h2>Advanced Tech Stack</h2>
+
+            <div class="tech-grid">
+
+
+                <div class="tech-item">
+                    <div class="tech-card">
+                        <div class="t-icon">⚡</div>
+                        <h4>Streamlit & Flask</h4>
+                        <p>Reactive frontend architecture paired with a robust Flask landing layer.</p>
+                        <span class="tech-tag">Platform</span>
+                    </div>
+                </div>
+
+
+                <div class="tech-item">
+                    <div class="tech-card">
+                        <div class="t-icon">👁️</div>
+                        <h4>Face Registration</h4>
+                        <p>Leveraging FaceRecognition and Dlib for high-fidelity facial biometric.</p>
+                        <span class="tech-tag">Vision AI</span>
+                    </div>
+                </div>
+
+
+                <div class="tech-item">
+                    <div class="tech-card">
+                        <div class="t-icon">🎙️</div>
+                        <h4>Voice Embeddings</h4>
+                        <p>utilizing Resemblyzer and Librosa for unique student voice signatures.</p>
+                        <span class="tech-tag">Audio Ai</span>
+                    </div>
+                </div>
+
+                <div class="tech-item">
+                    <div class="tech-card">
+                        <div class="t-icon">☁️</div>
+                        <h4>Supabase Cloud</h4>
+                        <p>Real-time PostgreSQL infrastructure with secure auth and sync.</p>
+                        <span class="tech-tag">Storage</span>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>     
+        
+        
+        <section id="student-journey" class="teacher-flow">
+            <div class="flow-container">
+                <div class="section-tag" style="text-align: center; margin-bottom: 40px; display: block;">-- Work Flow--</div>
+                <h2 style="text-align: center; font-size: 3.5rem; margin-bottom: 80px; ">The Student Journey</h2>
+                <div class="flow-step">
+                    <div class="flow-content">
+                        <div class="step-bedge">PHSAE 01</div>
+                        <h3>Instant Enrollment</h3>
+                        <p>
+                            Start Your session with our high-security authentication portal, Your data is encrypted and synced across all your devices.                        </p>
+                    </div>
+                    <div class="flow-image">
+                        <img src="{{url_for('static', filename='img/demo/studentlogin.png')}}" alt="flow image ">
+                    </div>
+                </div>
+
+                <div class="flow-step">
+                    <div class="flow-content">
+                        <div class="step-bedge">STEP 02</div>
+                        <h3>Create Subject</h3>
+                        <p>
+                            Create your Subjects, and student rosters from a single, beautiful unified stream.
+                        </p>
+                    </div>
+                    <div class="flow-image">
+                        <img src="{{url_for('static', filename='img/demo/createsubject.png')}}" alt="flow image ">
+                    </div>
+                </div>
+
+                <div class="flow-step">
+                    <div class="flow-content">
+                        <div class="step-bedge">STEP 03</div>
+                        <h3>Enrolled In Subject</h3>
+                        <p>
+                            Enroll in subject is a breeze, just name it, and SnapClass generates everything you need to start tracking.
+                        </p>
+                    </div>
+                    <div class="flow-image">
+                        <img src="{{url_for('static', filename='img/demo/enrollinsub.png')}}" alt="flow image ">
+                    </div>
+                </div>
+
+                <div class="flow-step">
+                    <div class="flow-content">
+                        <div class="step-bedge">STEP 04</div>
+                        <h3>Enrolled Subject</h3>
+                        <p>
+                            Start Your session with our high-security authentication portal, Your data is encrypted and synced across all your devices.
+                        </p>
+                    </div>
+                    <div class="flow-image">
+                        <img src="{{url_for('static', filename='img/demo/enrollsub.png')}}" alt="flow image ">
+                    </div>
+                </div>
+
+                <div class="flow-step">
+                    <div class="flow-content">
+                        <div class="step-bedge">STEP 05</div>
+                        <h3>UnRoll From Subject</h3>
+                        <p>
+                            Switch to voice mode for a futuristic roll-call, Students Speak sequentially, and our AI matches their unique voice signature.
+                        </p>
+                    </div>
+                    <div class="flow-image">
+                        <img src="{{url_for('static', filename='img/demo/unroll.png')}}" alt="flow image ">
+                    </div>
+                </div>
+
+                <div class="flow-step">
+                    <div class="flow-content">
+                        <div class="step-bedge">STEP 06</div>
+                        <h3>Actionable Records</h3>
+                        <p>
+                            Review and manage historical logs. View confidence scores, download CSV reports, and trace long-term.
+                        </p>
+                    </div>
+                    <div class="flow-image">
+                        <img src="{{url_for('static', filename='img/demo/share.png')}}" alt="flow image ">
+                    </div>
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <section class="purple-section">
+            <h2>Ready To Upgrade Your Classroom?</h2>
+            <p>Join thousands of educators who have simplified their day with SnapClass. The Smartest AI Powered attendance system is just one click away.</p>
+
+            <a href="https://snapclass-main-golu.streamlit.app/" class="btn-white">Start AI Attendance Now</a>
+        </section>
+
+
+
+
+
+        <footer class="main-footer">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <img src="{{url_for('static', filename='img/logo.png')}}" style="height: 32px; alt: SnapClass logo;">
+                        <div class="logo-text">SnapClass</div>
+                    </div>
+                    <p>
+                        The next Generation of classroom management, powered by advanced AI biometrics, Join the Future of Education today.
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <h4>Products</h4>
+                    <ul>
+                        <li>
+                            <a href="#features" style="color: white;">AI Attendance</a>
+                        </li>
+                        <li>
+                            <a href="#features" style="color: white;">Smart Roster</a>
+                        </li>
+                        <li>
+                            <a href="#tech" style="color: white;">Tech Stacks</a>
+                        </li>
+                        <li>
+                            <a href="#student-journey" style="color: white;">Student Portal</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Experience</h4>
+                    <ul>
+                        <li>
+                            <a href="#features" style="color: white;">Teacher Journey</a>
+                        </li>
+                        <li>
+                            <a href="#features" style="color: white;">Student Journey</a>
+                        </li>
+                        <li>
+                            <a href="#tech" style="color: white;">Voice ID Roll-Coll</a>
+                        </li>
+                        <li>
+                            <a href="#student-journey" style="color: white;">FaceID Scan</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li>
+                            <a href="#" style="color: white;">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#features" style="color: white;">How It Works</a>
+                        </li>
+                        <li>
+                            <a href="#" style="color: white;">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="#" style="color: white;">Terms of use</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 SnapClass AI. Built with ❤️ Educators EveryWhere.</p>
+            </div>
+        </footer>
+    </body>
+</html>
